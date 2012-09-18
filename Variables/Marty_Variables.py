@@ -5,16 +5,15 @@ class dotdict(dict):
     __delattr__= dict.__delitem__
 
 dd = dotdict()
-var = []
+var = {}
 string = raw_input(">>")
-a = string[:string.index("=")]
-dd.a = string[string.index("=")+1:len(string)]
-var.append({a:dd.a})
-print dd.a
-print a
+a = string.split("=")[0]
+b = string.split("=")[1]
+var[a] = b
+print a + " = " + b
 print var
 
-b = raw_input()
+c = raw_input(">>>")
 for i in var:
-	if b == i:
-		print var.i
+	if c == i:
+		print var[i]
