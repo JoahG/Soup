@@ -89,7 +89,7 @@ def program():
             elif string.strip() == 'var':
                     variables()        
             elif string.strip() == 'author':
-                    print "      Soup Copyright Ã‚Â© 2012"
+                    print "      Soup Copyright (c) 2012"
                     print "        Codecademy Users:"
                     print "         @tommycopeland"
                     print "            @thebrit"
