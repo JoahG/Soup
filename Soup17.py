@@ -91,6 +91,8 @@ def program():
                     print "[int] <= [int]"
                     print "[int] ^ [int]"
                     print "rand( s[int] , f[int] )"
+                    print "[key]=[value]"
+                    print "var [key]"
                     print "help"
                     print "cmd"
                     print "author"
