@@ -25,7 +25,7 @@ def memberNew (plist):
     return False
     
 def mastHead():
-    print "       Welcome to Soup v16.5!"
+    print "       Welcome to Soup v17!"
     print "  Use Soup to do simple commands,"
     print "    type 'cmd' to see them all."
     print "  Enter 'exit' at any time to quit."
