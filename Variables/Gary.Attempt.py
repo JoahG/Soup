@@ -54,15 +54,10 @@ def variables():
             else:
                 print 'Error: You need to have a semicolon after print statements'
         else:
-                #print varString
                 operator = memberNew(varString)
-                #print operator
                 string = varString.split(operator)
                 operator_func = operator_list[operator]
-                #print operator_func
-                var1 = memory[string[0]]
-                var2 = memory[string[1]]
-                print operator_func(var1, var2)
+                print operator_func(int(memory[string[0]]), int(memory[string[1]]))
             
 
 def program():
