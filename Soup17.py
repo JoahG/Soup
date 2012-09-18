@@ -47,11 +47,13 @@ def program():
                 print a + " = " + b
             elif member ('var', string):
                 string = string[string.index("var")+4:]
+                defined = False
                 for j in var:
                     if string == j:
                         print var[j]
-                    else:
-                        print "Undefined"
+                        defined = True
+                if defined == False:
+                    print "Undefined"
             elif member ('return', string):
                 if member(';', string):
                     print '==>' + string[string.index('return') + 6: string.index(';')]
