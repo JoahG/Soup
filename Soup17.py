@@ -40,16 +40,16 @@ def program():
             string = raw_input('>> ').lower()
             if string.strip() == 'exit':
                 i = 1
-            elif member ('=', string):
+            elif member ('=', string) and (member('==',string)) == False:
                 a = string.split("=")[0]
                 b = string.split("=")[1]
                 var[a] = b
                 print a + " = " + b
             elif member ('var', string):
                 string = string[string.index("var")+4:]
-                for i in var:
-                    if string == i:
-                        print var[i]
+                for j in var:
+                    if string == j:
+                        print var[j]
                     else:
                         print "Undefined"
             elif member ('return', string):
