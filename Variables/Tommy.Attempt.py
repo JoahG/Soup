@@ -68,7 +68,7 @@ def program():
             elif string.strip() == 'help':
                     mastHead()
             elif string.strip() == 'author':
-                    print "      Soup Copyright Ãƒâ€šÃ‚Â© 2012"
+                    print "      Soup Copyright (c) 2012"
                     print "        Codecademy Users:"
                     print "         @tommycopeland"
                     print "            @thebrit"
